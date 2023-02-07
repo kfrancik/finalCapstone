@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Kate's Corner</title>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = "../styles/myStyles.css" rel = "stylesheet" type = "text/css">
+    <link href = "../styles/myStory.css" rel = "stylesheet" type = "text/css">
+    <!-- JavaScript-->
+    <script type="text/javascript" src="../javascript/index.js"></script> 
+</head>
+
+<body>
+<main>    
+    <!-- Navigation -->
+    <ul id = "main-navigation">
+        <li><a href = "../index.html" target = "_self">Home</a></li>
+        <li><a href = "#" class = "active">My story</a></li>
+        <li><a href = "contact.html" target = "_self">Contact</a></li>
+        <li><a href = "saved.html" target = "_self">Saved</a></li>
+    </ul>
+
+    <!-- Header -->
+    <header id = "web-name">
+        <h1>Kate's Corner</h1>
+        
+        <img src="../images/princess.jpg" alt="princess">
+    </header>
+
+    <div id = "profile">
+    <h2>Hi, my name is Kate.</h2>
+        
+            <p>I have always believed that the true meaning of a thing can be found in the details. 
+               As a life-long lover of handmade crafts, one of the most exciting things for me is to try and capture that beautiful spark of character in each piece I create. 
+               For me, a seemingly small piece of jewellery can hide hidden meaning in its intricacies.</p>
+            <p>As a lover of minimalism, but also a person who loves to highlight her individuality, 
+               the making and wearing of unique handmade jewellery has become a great way to express myself.</p>   
+            <p>I agree with Elizabeth Taylor:</p>
+            
+            <blockquote cite="https://fortuneandframe.com/blogs/news/jewelry-quotes">
+                "Jewelry has the power to be the one little thing that makes you feel unique." 
+            </blockquote>
+
+            <p>I believe there are more women like me, and I create my jewellery for them because I know that less is more and the detail matters.</p>
+    </div>
+    <!-- Sections -->
+        <div id = "inspiration">
+            <h2>How I create my jewellery</h2>
+            <h3>Inspiration is first</h3>
+            <p>Inspiration can come from anywhere: wildlife, a good book, a movie, music, architecture. 
+               Sometimes, is it a colour, an interesting stone or some fleeting impression…</p>
+        </div>  
+        <img src="../images/dragonfly.jpg" alt = "dragonfly" id = "inspiration-img">
+        <i class="fa fa-heart like" id="inspiration-img-like" name = "inspiration-img"></i>
+        <i class="fa fa-save save-img" id="inspiration-img-save" name = "inspiration-img"></i>   
+        
+        <div id = "design">    
+            <h3>Design is next</h3>
+            <p>Occasionally I draft my design on paper, but generally, I prefer to gather the materials I would like to use and let the idea come together in my head.</p>
+        </div>
+        <img src="../images/buttons.jpg" alt = "buttons" id = "design-img">
+        <i class="fa fa-heart like" id="design-img-like" name = "design-img"></i>
+        <i class="fa fa-save save-img" id="design-img-save" name = "design-img"></i>   
+        
+        <div id = "execution">
+            <h3>And finally, Execution</h3>
+            <p>I create my jewellery using two techniques: soutache embroidery and bead embroidery, which I often combine into a single piece. 
+               Both are very delicate and require a lot of patience, but the result is well worth the effort!</p>  
+            <p>I started my adventure with creating soutache jewellery in 2012. I saw photos of other authors’ works and they charmed me. I decided to try. 
+               It was a fascinating challenge, especially as there were very few tutorials at that time. The only thing left for me was trial and error. 
+               Although the first pendant was far from perfect, soutache seduced me. 
+               Today I cheat on the soutache technique from time to time for beaded or resin jewellery, but I always keep coming back to my first love.</p>
+        </div>
+        <img src = "../images/3.jpg" alt = "necklace" id = "execution-img">
+        <i class="fa fa-heart like" id="execution-img-like" name = "execution-img"></i>
+        <i class="fa fa-save save-img" id="execution-img-save" name = "execution-img"></i> 
+
+    <!-- footer -->
+    <footer id = "footer"></footer>
+        <div id = "newsletter">
+            <h4>Newsletter</h4>
+            <label for = "fname">First name:</label>
+            <input type = "text" id = "fname" name = "fname"><br><br>
+            <label for = "email-address">Email addres:</label>
+            <input type = "email" id = "email-address" name = "email-address"><br><br>
+            <label>How often you want to receive the newsletter?</label><br>
+            <div id = "radio-buttons">
+                <label for="daily">Daily
+                <input type = "radio" id = "daily" name = "how-often" value = "daily" ></label>
+                <label for="weekly">Weekly
+                <input type = "radio" id = "weekly" name = "how-often" value = "weekly" ></label>
+                <label for="monthly">Monthly
+                <input type = "radio" id = "monthly" name = "how-often" value = "monthly" ></label>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+
+        <div id = "site-map">
+            <h4>Site Map</h4>
+            <ul>
+                <li><a href = "../index.html" target = "_self">Home</a></li>
+                <li><a href = "#" >My story</a></li>
+                <li><a href = "contact.html" target = "_self">Contact</a></li>
+                <li><a href = "saved.html" target = "_self">Saved</a></li>
+            </ul>
+        </div>
+
+        <div id = "contact">
+            <h4>Contact</h4>
+            <address>
+                <a href="mailto:kfrancik@gmail.com">Send message</a><br>
+                <a href="tel:+447376206250">Call</a>
+            </address>
+        </div>
+</main>
+</body>
+
+
+</html>
