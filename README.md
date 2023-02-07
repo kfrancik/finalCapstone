@@ -39,7 +39,4 @@ Footer:
 - Send message: activate email application.
 - Call: activate phone mode if available. 
 
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/kfrancik/finalCapstone/blob/master/images/screencapture.jpg">
- <img alt="screencapture" src="screencapture">
-</picture>
+![screencapture](https://github.com/kfrancik/finalCapstone/blob/master/images/screencapture.jpg)
