@@ -1,0 +1,236 @@
+/** Main CSS styles for all pages **/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    }
+/* Set the basic font size to 10px */
+html {
+    font-size: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue","Source Sans Pro",sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Typography */
+h1 { font-size: 13vw; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3.5rem; }
+h4 { font-size: 3rem; }
+body { font-size: 2rem; }
+input { font-size: 2rem; }
+blockquote {
+    font-size: 2.5rem;
+    font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Colour scheme */
+
+.active  { color: orange;}
+body     { background-color: rgb(0,48,49);}
+body     { color: #eee; }     
+#main-navigation a          { color: #eee; }
+#main-navigation a.active   { color: rgb(255, 69, 0); }
+#jewellery      { background-color: rgba(138, 43, 226, 0.8);}
+#projects       { background-color: rgba(255, 69, 0, .8);}
+#competitions   { background-color: rgba(118, 185, 16, 0.8);}
+#footer         { background-color: rgba(102, 51, 153, .8);}
+a { color: #eee; }
+
+/* Main block */
+main {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%; 
+    grid-template-rows: 10rem auto auto auto auto auto 50rem;
+
+    justify-content: center;
+}
+
+/* Navigation */
+#main-navigation {
+    width: 100%;
+    text-align: left;
+    margin-top: 3vw;
+    font-size: 3rem;
+
+    position: relative;
+    z-index: 999;
+}
+#main-navigation ul { text-align: center;}
+#main-navigation li { display: inline; }
+#main-navigation a  { padding: 3vw 3vw 3vw 0; }
+#main-navigation a:hover { text-decoration: underline; }
+#main-navigation a.active:hover  { text-decoration: none; }
+
+/* Header */
+header > img {
+    width: 60vw;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    z-index: 0;
+}
+header > h1 {
+    width: 60vw;
+    line-height: 8vw;
+
+    margin-top: 5vw;
+
+    position: relative;
+    z-index: 998;
+}
+
+/* Profile */
+#profile {
+    width: 60%;
+    padding: 5% 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    position: relative;
+    z-index: 999;
+}
+ /* Jewellery */
+ #jewellery, #competitions {
+    padding: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    position: relative;
+}
+#jewellery-img, #competitions-img {
+    width: 58vh;
+}
+/* Projects */
+#projects {
+    padding: 10%; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    position: relative;
+}
+#projects-img {
+    justify-self: end;
+    width: 58vh;  
+    margin: 5% 0;  
+}
+/* Footer */
+/* Newsletter form */
+
+#newsletter h4, #site-map h4, #contact h4  { margin: 3rem 0; }
+#newsletter input {
+    padding: .4rem;
+    width: 100%;    
+}
+#newsletter label {
+    display: inline-block;
+    text-align: center;
+}
+#newsletter input[type=submit] {
+    width: 50%;
+    padding: .4rem;
+    font-size: 2rem;
+    background-color: rgba(255, 69, 0, .2);
+    border-color: rgba(255, 69, 0,.5)
+}
+#newsletter input[type=submit]:hover {
+    background-color: rgba(255, 69, 0, .5);
+}
+#newsletter input[type=submit]:active {
+    background-color: rgba(255, 69, 0, .9);
+    border-color: orangered;
+}
+
+/* Site map */
+#site-map { justify-self: center; }
+#site-map ul {padding-left: 5%; }
+
+/* Contact */
+#contact { justify-self: left; }
+
+/** Arrangement of elements in the grid **/
+/* Main navigation */
+#main-navigation    { grid-area: 1 / 2 / 1 / 6; }
+#web-name           { grid-area: 2 / 2 / 2 / 6; }
+#profile            { grid-area: 3 / 2 / 3 / 6; }
+#jewellery          { grid-area: 4 / 3 / 4 / 6; }
+#jewellery-img      { grid-area: 4 / 2 / 4 / 6; }
+#jewellery-img-like { grid-area: 4 / 2 / 4 / 6; }
+#jewellery-img-save { grid-area: 4 / 2 / 4 / 6; }
+#projects           { grid-area: 5 / 2 / 5 / 5; }
+#projects-img       { grid-area: 5 / 4 / 5 / 6; }
+#projects-img-like  { grid-area: 5 / 4 / 5 / 6; }
+#projects-img-save  { grid-area: 5 / 4 / 5 / 6; }
+#competitions       { grid-area: 6 / 3 / 6 / 6; }
+#competitions-img   { grid-area: 6 / 2 / 6 / 6; }
+#competitions-img-like    { grid-area: 6 / 2 / 6 / 6; }
+#competitions-img-save    { grid-area: 6 / 2 / 6 / 6; }
+#newsletter         { grid-area: 7 / 2 / 7 / 4; }
+#site-map           { grid-area: 7 / 4 / 7 / 5; }
+#contact            { grid-area: 7 / 5 / 7 / 6; }
+#footer             { grid-area: 7 / 1 / 7 / end; }
+
+#projects-img-like {
+    text-align: right;
+    margin-top: 40px;
+}
+#projects-img-save {
+    text-align: right;
+    margin-top: 76px;
+}
+
+/* Different styles for different media types/devices */
+
+@media (max-width: 992px) {
+    main {
+        grid-template-rows: 10rem auto auto auto auto auto 50rem 50rem;
+    }
+    #newsletter         { grid-area: 7 / 2 / 7 / 6; }
+    #site-map           { grid-area: 8 / 2 / 8 / 4; }
+    #contact            { grid-area: 8 / 4 / 8 / 6; }
+    /* Contact */
+    #contact { justify-self: center; }
+}
+@media (max-width: 768px) {
+    #profile {
+        width: 100%;
+    }
+    #main-navigation {
+        font-size: 2.5rem;
+    }
+}
+/*Save for later*/
+.save, .comment {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 2rem;
+    background-color: rgba(0, 48, 49, .2);
+    border-color: rgba(0, 48, 49,.5)
+}
+.save:hover, .comment:hover {
+    background-color: rgba(0, 48, 49, .5);
+}
+.save:active, .comment:active {
+    background-color: rgba(0, 48, 49, .9);
+    border-color: rgb(0, 48, 49);
+}
+/*Icon*/
+.like {
+    color: white;
+    font-size:36px; 
+    margin: 15px 15px;
+}
+.save-img {
+    color: white;
+    font-size:36px; 
+    margin: 52px 15px;
+}
+input, textarea {
+    width: 100%;
+}

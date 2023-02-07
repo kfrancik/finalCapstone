@@ -1,0 +1,65 @@
+/** Dedicated CSS styles for my story page **/
+
+/** Typography **/
+blockquote {
+    font-size: 2.5rem;
+    font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/* Images */
+#inspiration-img, #design-img, #execution-img  {
+    justify-self: stretch;
+    position: relative;
+    z-index: 80;
+}
+
+/* Text */
+#inspiration, #design, #execution, #profile  {
+    padding: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    z-index: 99;
+}
+/* Icon */
+.like, .save-img {
+    z-index: 100;
+}
+
+#profile {
+    background-color: rgba(6, 107, 83, 0.8);
+}
+
+/** Arrangement of elements in the grid **/
+/* Main navigation */
+#inspiration        { grid-area: 4 / 2 / 4 / 4; }
+#inspiration-img    { grid-area: 4 / 4 / 4 / 5; }
+#inspiration-img-like    { grid-area: 4 / 4 / 4 / 5; }
+#inspiration-img-save    { grid-area: 4 / 4 / 4 / 5; }
+
+#design             { grid-area: 5 / 4 / 5 / 6; }
+#design-img         { grid-area: 5 / 3 / 5 / 4; }
+#design-img-like         { grid-area: 5 / 3 / 5 / 4; }
+#design-img-save         { grid-area: 5 / 3 / 5 / 4; }
+
+#execution          { grid-area: 6 / 2 / 6 / 4; }
+#execution-img      { grid-area: 6 / 4 / 6 / 6; }
+#execution-img-like      { grid-area: 6 / 4 / 6 / 6; }
+#execution-img-save      { grid-area: 6 / 4 / 6 / 6; }
+
+/* Different styles for different media types/devices */
+
+@media (max-width: 992px) {
+    #inspiration        { grid-area: 4 / 2 / 4 / 5; }
+    #inspiration-img    { grid-area: 4 / 4 / 4 / 6; }
+
+    #design             { grid-area: 5 / 3 / 5 / 6; }
+    #design-img         { grid-area: 5 / 2 / 5 / 4; }
+
+    #execution          { grid-area: 6 / 2 / 6 / 5; }
+    #execution-img      { grid-area: 6 / 4 / 6 / 6; }
+    #inspiration, #design, #execution, #profile {
+        background-color: rgba(6, 107, 83, 0.5);
+    }
+}
