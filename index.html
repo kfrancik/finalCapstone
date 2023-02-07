@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Kate's Corner</title>
+        
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href = "./styles/myStyles.css" rel = "stylesheet" type = "text/css">
+    <!-- JavaScript-->
+    <script type="text/javascript" src="./javascript/index.js"></script> 
+</head>
+
+<body>
+<main>
+    <!-- Navigation -->
+    <ul id = "main-navigation">
+        <li><a href = "#" class = "active">Home</a></li>
+        <li><a href = "./pages/my-story.html" target = "_self" >My story</a></li>
+        <li><a href = "./pages/contact.html" target = "_self"  >Contact</a></li>
+        <li><a href = "./pages/saved.html" target = "_self">Saved</a></li>
+    </ul>
+
+    <!-- Header -->
+    <header id = "web-name">
+        <h1>Kate's Corner</h1>
+        
+        <img src="./images/kameleon-leafs.jpg" alt="a beaded chameleon on a branch">
+    </header>
+ 
+    <aside id = "profile">
+        <h2>Interested in handmade jewellery? Come here!</h2>
+
+        <p>My name is Kate and I love handmade jewellery. Why? Because every piece of jewellery is special. 
+           Because I love to design it myself. Kate's Corner is a place where I want to share my passion with others. 
+           What charms me, inspires me and what I create. I invite you to my world of creation.</p>
+    </aside>
+
+    
+    <section id = "jewellery">
+        <h3>My Jewellery</h3>
+        <p>I have always loved original jewellery. Why? Because jewellery helps me express my temperament and mood. There is a story behind every piece of my jewellery. People have always believed that jewellery has magical powers. It not only decorates but also protects against evil. 
+            You can believe it or not, but what is certain is that jewellery turns boring outfits into exciting ones.<br>
+            My jewellery is mainly inspired by nature, which is an inexhaustible source of shapes, colours, and ideas. I make it in the technique of bead and soutache embroidery.</p>
+        <a href = "https://katescorner.co.uk/galleries/" target="_blank">Read more...</a><br>  
+        <button id="bt-jewellery"class="btn btn-primary save">Save for later</button>
+        <button id="cm-jewellery"class="btn btn-primary comment" name="jewellery-comment">Leave comment</button><br>
+        <div id="jewellery-comment"></div>
+        <i class="fa fa-heart like" name="jewellery" id="jewellery-like"></i> 
+        <div id="jewellery-left-comment"></div> 
+  
+    </section>
+    <img src = "./images/necklace.jpg" alt = "Dragonfly necklace" id = "jewellery-img">
+    <i class="fa fa-heart like" id="jewellery-img-like" name="jewellery-img"></i>
+    <i class="fa fa-save save-img" id="jewellery-img-save" name="jewellery-img"></i> 
+
+    <section id = "projects">
+        <h3>Projects</h3>
+        <p>The soutache and bead embroidery techniques are used not only to create jewellery.  Originally, these techniques were primarily used to decorate clothes. Currently, they are still sometimes used for this purpose.  I am part of a project in which fairy-tale costumes are created. Creations of nearly a hundred soutache artists make up the final effect that can be admired at museum exhibitions and photo sessions.</p>
+        <a href = "https://katescorner.co.uk/projects/" target="_blank">Read more...</a><br>
+        <button id="bt-projects" class="btn btn-primary save">Save for later</button>  
+        <button id="cm-projects"class="btn btn-primary comment">Leave comment</button><br>
+        <div id="projects-comment"></div>
+        <i class="fa fa-heart like" name="projects" id="projects-like"></i> 
+        <div id="projects-left-comment"></div>    
+    </section>
+    <img src = "./images/The-Princess-of-Soutache.jpg" alt = "The Princess of Soutache" id = "projects-img">   
+    <i class="fa fa-heart like" id="projects-img-like" name = "projects-img"></i>
+    <i class="fa fa-save save-img" id="projects-img-save" name = "projects-img"></i>
+    <section id = "competitions">
+        <h3>Competitions</h3>
+        <p>The spirit of competition is no stranger to me. I love art competitions! They are an opportunity for me to show off my creations and compare my work with other artists. Competitions are very inspiring, especially when artists creating with different techniques are standing in.</p>
+        <a href = "https://katescorner.co.uk/competitions/" target = "_blank">Read more...</a><br>  
+        <button id="bt-competitions" class="btn btn-primary save">Save for later</button> 
+        <button id="cm-competitions"class="btn btn-primary comment">Leave comment</button><br>
+        <div id="competitions-comment"></div>
+        <i class="fa fa-heart like" name="competitions" id="competitions-like"></i>  
+        <div id="competitions-left-comment"></div>
+    </section>
+    <img src = "./images/royal-stone-competitions.jpg" alt = "Beaded necklace" id = "competitions-img">
+    <i class="fa fa-heart like" id="competitions-img-like" name="competitions-img"></i>
+    <i class="fa fa-save save-img" id="competitions-img-save" name="competitions-img"></i>
+    <!-- footer -->
+    <footer id = "footer"></footer>
+        <div id = "newsletter">
+            <h4>Newsletter</h4>
+            <label for = "fname">First name:</label>
+            <input type = "text" id = "fname" name = "fname"><br><br>
+            <label for = "email-address">Email addres:</label>
+            <input type = "email" id = "email-address" name = "email-address"><br><br>
+            <label>How often you want to receive the newsletter?</label><br>
+            <div id = "radio-buttons">
+                <label for="daily">Daily
+                <input type = "radio" id = "daily" name = "how-often" value = "daily" ></label>
+                <label for="weekly">Weekly
+                <input type = "radio" id = "weekly" name = "how-often" value = "weekly" ></label>
+                <label for="monthly">Monthly
+                <input type = "radio" id = "monthly" name = "how-often" value = "monthly" ></label>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+
+        <div id = "site-map">
+            <h4>Site Map</h4>
+            <ul>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "./pages/my-story.html" target = "_self">My story</a></li>
+                <li><a href = "./pages/contact.html" target = "_self">Contact</a></li>
+                <li><a href = "./pages/saved.html" target = "_self">Saved</a></li>
+            </ul>
+        </div>
+
+        <div id = "contact">
+            <h4>Contact</h4>
+            <address>
+                <a href="mailto:kfrancik@gmail.com">Send message</a><br>
+                <a href="tel:+447376206250">Call</a>
+            </address>
+        </div>
+    
+    
+
+</main> 
+</body>
+
+
+</html>
