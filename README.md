@@ -40,6 +40,6 @@ Footer:
 - Call: activate phone mode if available. 
 
 <picture>
- <source media="(prefers-color-scheme: dark)" srcset="images/screencapture.jpg">
+ <source media="(prefers-color-scheme: dark)" srcset="https://github.com/kfrancik/finalCapstone/blob/master/images/screencapture.jpg">
  <img alt="screencapture" src="screencapture">
 </picture>
